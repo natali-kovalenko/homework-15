@@ -6,6 +6,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/slick.css">
+        <link rel="stylesheet" href="css/slick-theme.css">
+        <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/styles.css">
     </head>
     <body>
@@ -28,7 +31,12 @@
         </header>
         <div id="container">
             <main class="main-container">
-                <img src="img/photo01.jpg" class="img-mob">
+                <div class="slider">
+                    <div><img src="img/photo-01.jpg"></div>
+                    <div><img src="img/photo-02.png"></div>
+                    <div><img src="img/photo-03.png"></div>
+                </div>
+                <!-- <img src="img/photo01.jpg" class="img-mob"> -->
                 <div class="section-about">
                     <p>Suspendisse potenti. Curabitur in leo non odio hendrerit semper. Morbi id tempor eros. Donec viverra tempor congue. Suspendisse quis felis ultricies, egestas tellus non, semper est.Donec congue lorem odio, eu ornare nisl malesuada tincidunt. Nullam ac leo est. Donec varius neque vel ex consectetur aliquet. Aliquam venenatis vel tellus non tincidunt. In viverra tellus ut libero dapibus ullamcorper. Donec non feugiat massa.</p>
                 </div>
@@ -48,6 +56,16 @@
                 </form>
             </main>
         </div>
+        <script src="js/jquery-1.11.0.min.js"></script>
+        <script src="js/jquery-migrate-1.2.1.min.js"></script>
+        <script src="js/slick.min.js"></script>
+        <script>
+            $(document).ready(function(){
+              $('.slider').slick({
+                 dots: true,
+              });
+            });
+        </script>
         <script type="text/javascript">
             let burger = document.querySelector("#burger-icon");
             let header = document.querySelector("#header");
