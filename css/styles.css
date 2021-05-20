@@ -130,6 +130,7 @@ img {
 .send-message {
 	width: 200px;
 	height: 60px;
+	background: none;
 	-webkit-background-color: #000;
 	background-color: #000;
 	color: #fff;
