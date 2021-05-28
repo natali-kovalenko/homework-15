@@ -8,8 +8,9 @@ body {
 	font-family: 'Montserrat', sans-serif;
 }
 
-.slick-arrow {
-	display: none !important;
+.slick-prev:before,
+.slick-next:before {
+	color: #cecece;
 }
 
 #container {
@@ -52,6 +53,10 @@ ul {
 .nav-item-link {
 	text-decoration: none;
 	color: #000;
+}
+
+.nav-item-link:hover {
+	color: #2EC1AC;
 }
 
 img {
@@ -158,6 +163,12 @@ img {
 	border-radius: 8px;
 	position: absolute;
 	right: 30px;
+	cursor: pointer;
+	transition: .3s ease;
+}
+
+.send-message:hover {
+	background-color: #2b2b2b;
 }
 
 
@@ -369,6 +380,11 @@ img {
 		width: calc(100% + 40px);
 		max-width: none;
 	}
+
+	.slick-arrow {
+		display: none !important;
+	}
+
 
 	/*about*/
 	.section-about {
