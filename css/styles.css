@@ -381,10 +381,10 @@ img {
 		max-width: none;
 	}
 
-	.slick-arrow {
-		display: none !important;
-	}
 
+	  .slick-arrow:before{
+        display:none;
+    }
 
 	/*about*/
 	.section-about {
