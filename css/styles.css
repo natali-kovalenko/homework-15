@@ -382,8 +382,8 @@ img {
 	}
 
 
-	  .slick-arrow:before{
-        display:none;
+	  .slick-arrow{
+        display:none !important;
     }
 
 	/*about*/
